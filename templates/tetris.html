@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tetris</title>
+    <style>
+        canvas {
+            border: 2px solid #000;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+        #score {
+            font-size: 24px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="score">Puntuación: 0</div>
+    <canvas id="tetris" width="240" height="400"></canvas>
+    <div id="gameOver" style="display: none;">
+        <h2>GAME OVER</h2>
+        <p>Presiona Enter para reiniciar</p>
+    </div>
+    <script src="{{ url_for('static', filename='js/tetris.js') }}"></script>
+</body>
+</html>

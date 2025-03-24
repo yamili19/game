@@ -18,9 +18,9 @@ def tenis():
 def buscaminas():
     return render_template('buscaminas.html')
 
-@app.route('/pinball')
-def pinball():
-    return render_template('pinball.html')
+@app.route('/tetris')
+def tetris():
+    return render_template('tetris.html')
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))  # <-- Puerto dinámico para Render
