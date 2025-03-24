@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buscaminas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="game-container">
+    <div class="counters">
+        <div id="mineCounter">Minas totales: 15</div>
+        <div id="foundCounter">Minas encontradas: 0</div>
+    </div>
+    <div class="end-game-message" id="winMessage">
+        <h1>¡GANASTE! 🎉</h1>
+        <button id="playAgainWin">Jugar de nuevo</button>
+    </div>
+
+    <div class="end-game-message" id="loseMessage">
+        <h1>¡PERDISTE! 💣</h1>
+        <button id="playAgainLose">Jugar de nuevo</button>
+    </div>
+    <canvas id="gameCanvas"></canvas>
+</div>
+    <script src="{{ url_for('static', filename='js/buscaminas.js') }}"></script>
+</body>
+</html>

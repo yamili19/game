@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tenis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <canvas id="gameCanvas" width="600" height="400"></canvas>
+    <div id="scoreBoard">
+        <span id="playerScore">0</span> - <span id="computerScore">0</span>
+    </div>
+    <script src="{{ url_for('static', filename='js/tenis.js') }}"></script>
+</body>
+</html>
